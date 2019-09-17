@@ -1,0 +1,24 @@
+{
+    "name": "shahid/sp-migrations-generator",
+    "description": "This package generates migrations for sps and functions from your env db through artisan commands.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shahid Ullah Khan",
+            "email": "shahid@shahidullahkhan.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Shahid\\SpMigrationsGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shahid\\SpMigrationsGenerator\\SpMigrationsGeneratorServiceProvider"
+            ]
+        }
+    }
+}
