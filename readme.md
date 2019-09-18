@@ -18,3 +18,7 @@ require this package through composer using following command
 ```sh
 $ composer require shahid/sp-migrations-generator:dev-master
 ```
+after successfull installation, run below command to generate migrations.
+```sh
+$ php artisan spmigration:generate
+```
