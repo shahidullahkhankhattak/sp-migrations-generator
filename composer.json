@@ -8,7 +8,7 @@
             "email": "shahid@shahidullahkhan.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Shahid\\SpMigrationsGenerator\\": "src/"

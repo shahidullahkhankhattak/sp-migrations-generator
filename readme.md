@@ -16,5 +16,9 @@ This migration generator requires [Laravel](https://laravel.com/) to work.
 require this package through composer using following command
 
 ```sh
-$ composer require shahid/sp-migrations-generator
+$ composer require shahid/sp-migrations-generator:dev-master
+```
+after successfull installation, run below command to generate migrations.
+```sh
+$ php artisan spmigration:generate
 ```
