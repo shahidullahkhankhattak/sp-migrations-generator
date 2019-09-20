@@ -23,7 +23,7 @@ Next, add the following service providers:
 Shahid\SpMigrationsGenerator\SpMigrationsGeneratorServiceProvider::class,
 ```
 ## Usage
-after successfull installation, run below command to generate migrations.
+Run below command to generate migrations.
 ```sh
 $ php artisan spmigration:generate
 ```
