@@ -9,7 +9,7 @@
   - Generates migrations for SP
   - Generates migrations for Functions
 
-### Installation
+## Installation
 
 This migration generator requires [Laravel](https://laravel.com/) to work.
 
