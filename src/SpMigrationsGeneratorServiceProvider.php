@@ -16,7 +16,11 @@ class SpMigrationsGeneratorServiceProvider extends ServiceProvider
         $this->app->singleton('command.shahid.spmigrationsgenerator.generatespmigration', function($app){
             return $app['Shahid\SpMigrationsGenerator\SpMigrationsGenerateCommand'];
         });
+        $this->app->singleton('command.shahid.spmigrationsgenerator.inserttomigrationtable', function($app){
+            return $app['Shahid\SpMigrationsGenerator\SpMigrationsInsertToMigrationTable'];
+        });
         $this->commands('command.shahid.spmigrationsgenerator.generatespmigration');
+        $this->commands('command.shahid.spmigrationsgenerator.inserttomigrationtable');
     }
 
     /**

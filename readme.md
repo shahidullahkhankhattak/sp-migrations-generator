@@ -9,16 +9,21 @@
   - Generates migrations for SP
   - Generates migrations for Functions
 
-### Installation
+## Installation
 
 This migration generator requires [Laravel](https://laravel.com/) to work.
 
 require this package through composer using following command
 
 ```sh
-$ composer require shahid/sp-migrations-generator:dev-master
+$ composer require shahid/sp-migrations-generator
 ```
-after successfull installation, run below command to generate migrations.
+Next, add the following service providers:
+```
+Shahid\SpMigrationsGenerator\SpMigrationsGeneratorServiceProvider::class,
+```
+## Usage
+Run below command to generate migrations.
 ```sh
 $ php artisan spmigration:generate
 ```
