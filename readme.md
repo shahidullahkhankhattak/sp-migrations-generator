@@ -27,3 +27,7 @@ Run below command to generate migrations.
 ```sh
 $ php artisan spmigration:generate
 ```
+Or Run below command to ignore some table migrations.
+```sh
+$ php artisan spmigration:inserttables
+```
