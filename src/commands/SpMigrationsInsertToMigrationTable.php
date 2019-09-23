@@ -46,8 +46,6 @@ class SpMigrationsInsertToMigrationTable extends Command
         foreach ($files as $filename) {
             $matches = [];
             preg_match('/(\w+)(.php)/', $filename, $matches);
-            $this->info($matches[1]);
-            
             if($matches && count($matches) >= 1){
                 $filename = $matches[1];
                 $record = DB::table('migrations')->select('migration')->where('migration', $filename)->first();
