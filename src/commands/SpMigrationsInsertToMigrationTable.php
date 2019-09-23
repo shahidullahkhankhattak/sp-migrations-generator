@@ -45,9 +45,11 @@ class SpMigrationsInsertToMigrationTable extends Command
         $changed = false;
         foreach ($files as $filename) {
             $matches = [];
-            preg_match('/(_create_)(\w+)(_table.php)/', $filename, $matches);
-            if($matches && count($matches) >= 2){
-                $filename = $matches[2];
+            preg_match('/(\w+)(.php)/', $filename, $matches);
+            $this->info($matches[1]);
+            
+            if($matches && count($matches) >= 1){
+                $filename = $matches[1];
                 $record = DB::table('migrations')->select('migration')->where('migration', $filename)->first();
                 if(!$record){
                     DB::table('migrations')->insert([
