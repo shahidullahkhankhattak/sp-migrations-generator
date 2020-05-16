@@ -2,7 +2,7 @@
 
 [![N|Solid](https://shahidullahkhan.com/images/powered.png)](https://shahidullahkhan.com)
 
-[![Build Status](https://shahidullahkhan.com/images/passing.svg)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://shahidullahkhan.com/images/passing.svg)](https://shahidullahkhan.com)
 
 ##### This is a laravel package that generates migrations for sps and functions from your database through artisan commands.
 
